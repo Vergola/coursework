@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @beer.title
+%p
+  %b Description:
+  = @beer.description
+%p
+  %b Picture:
+  = @beer.picture
+
+= link_to 'Edit', edit_beer_path(@beer)
+\|
+= link_to 'Back', beers_path
