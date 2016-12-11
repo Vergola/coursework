@@ -16,5 +16,9 @@
     = csrf_meta_tags
 
   %body
+  
+    = render partial: "shared/header"
 
     = yield
+    
+    = render partial: "shared/footer"

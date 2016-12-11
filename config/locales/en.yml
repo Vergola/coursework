@@ -22,3 +22,8 @@
 en:
   app_title: BeerReview
   app_description: Reviewing beers
+  shared:
+    header:
+        title: BeerReview
+    footer:
+        copyright: Copyright Karolis Silingas 2016
