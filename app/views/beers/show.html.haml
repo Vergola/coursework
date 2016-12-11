@@ -9,6 +9,18 @@
 %p
   %b Picture:
   = @beer.picture
+  
+%p Reviews:
+%table
+  %tbody
+    - @beer.reviews.each do |review|
+      %tr
+        %td=review.rating
+        %td=link_to 'Show', review
+        %td=link_to 'Edit', edit_review_path(review)
+        %td=link_to 'Destroy', review, :method => :delete, :data => {:confirm => 'Are you sure?'}
+  
+%p= link_to 'Add Review', new_review_path(beer_id: @beer)
 
 = link_to 'Edit', edit_beer_path(@beer)
 \|

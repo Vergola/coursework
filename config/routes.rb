@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   resources :beers
   root 'home#home'
   get 'contact', to: 'home#contact'
