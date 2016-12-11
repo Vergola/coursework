@@ -17,11 +17,8 @@
 
   %body
   
-    = render partial: "shared/header"
-    
-    - flash.each do |key, value|
-      = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
+    = render 'shared/header'
 
     = yield
     
-    = render partial: "shared/footer"
+    = render 'shared/footer'
