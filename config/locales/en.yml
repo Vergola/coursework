@@ -22,8 +22,25 @@
 en:
   app_title: BeerReview
   app_description: Reviewing beers
+  
+  home:
+    request_contact:
+        no_email: You need to put in email address
+        email_sent: Thanks. We will reply shortly
+    contact:
+        title: Contact Us
+        contact_us: Complete the form below to contact us
+        name: "Name:"
+        enter_name: Enter your name
+        email: "Email:"
+        enter_email: Enter your email address
+        message: "Message:"
+        enter_message: Your message
+        submit: Contact Us
+  
   shared:
     header:
         title: BeerReview
     footer:
         copyright: Copyright Karolis Silingas 2016
+    
