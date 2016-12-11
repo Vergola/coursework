@@ -1,6 +1,7 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: [:show, :edit, :update, :destroy]
   before_action :set_beer, only: [:new, :create]
+  before_action :authenticate_user!
 
   # GET /reviews
   # GET /reviews.json
@@ -26,6 +27,7 @@ class ReviewsController < ApplicationController
   # POST /reviews.json
   def create
     @review = @beer.reviews.new(review_params)
+    @review.user = current_user
 
     respond_to do |format|
       if @review.save

@@ -1,9 +1,12 @@
 require 'test_helper'
 
 class ReviewsControllerTest < ActionController::TestCase
+  include Devise::Test::ControllerHelpers
   setup do
     @review = reviews(:one)
     @beer = beers(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do

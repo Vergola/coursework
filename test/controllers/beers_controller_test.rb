@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class BeersControllerTest < ActionController::TestCase
+  include Devise::Test::ControllerHelpers
   setup do
     @beer = beers(:one)
   end
