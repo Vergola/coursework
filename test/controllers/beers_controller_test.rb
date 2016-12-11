@@ -18,7 +18,7 @@ class BeersControllerTest < ActionController::TestCase
 
   test "should create beer" do
     assert_difference('Beer.count') do
-      post :create, beer: { description: @beer.description, picture: @beer.picture, title: @beer.title }
+      post :create, beer: { description: @beer.description, picture: @beer.picture, title: @beer.title + " create" }
     end
 
     assert_redirected_to beer_path(assigns(:beer))
