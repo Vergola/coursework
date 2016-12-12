@@ -31,11 +31,11 @@ en:
         title: Contact Us
         contact_us: Complete the form below to contact us
         name: "Name:"
-        enter_name: Enter your name
+        enter_name: Please enter your name
         email: "Email:"
-        enter_email: Enter your email address
+        enter_email: Please enter your email address
         message: "Message:"
-        enter_message: Your message
+        enter_message: Please enter your message
         submit: Contact Us
     home:
       welcome: Welcome to my beer review app!

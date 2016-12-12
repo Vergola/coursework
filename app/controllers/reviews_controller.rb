@@ -20,7 +20,7 @@ class ReviewsController < ApplicationController
 
     respond_to do |format|
       if @review.save
-        format.html { redirect_to @review, notice: t('.create_success') }
+        format.html { redirect_to root_path, notice: t('.create_success') }
         format.json { render :show, status: :created, location: @review }
       else
         format.html { render :new }

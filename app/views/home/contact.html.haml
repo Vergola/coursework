@@ -1,14 +1,17 @@
 %h1= t('.title')
 %p= t('.contact_us')
 
-= form_tag request_contact_path, method: 'post' do
+= form_tag request_contact_path, method: 'post', id: 'form' do
     = label_tag :name, t('.name')
-    = text_field_tag :name, '', title: t('.enter_name'), size: 50
+    = text_field_tag :name, '', title: t('.enter_name'), size: 50, :class => "required"
     
     = label_tag :email, t('.email')
-    = email_field_tag :email, '', title: t('.enter_email')
+    = email_field_tag :email, '', title: t('.enter_email'), :class => "required"
     
     = label_tag :message, t('.message')
-    = text_field_tag :message, '', title: t('.enter_message'), size: 100
+    = text_field_tag :message, '', title: t('.enter_message'), size: 100, :class => "required"
     
     = submit_tag t('.submit')
+    
+%script
+    $("#form").validate();
