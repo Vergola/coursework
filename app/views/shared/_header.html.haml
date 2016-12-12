@@ -3,6 +3,10 @@
         .navbar-header
             %ul.nav.navbar-nav
                 %li
+                    %a.navbar-brand{:href => "/"} 
+                        = t(".title")
+                
+                %li
                     - if user_signed_in?
                         %li
                             = "#{current_user.email}"
@@ -16,13 +20,9 @@
                         %li
                             = link_to t('sign_up'), new_user_registration_path
                 %li
-                    =link_to 'Home', root_path
-                %li
                     =link_to 'Beers', beers_path
                 %li
                     =link_to 'Contact us', contact_path
-
-%h1=t('.title')
 
 - flash.each do |key, value|
     = content_tag :div, content_tag(:p, value), id: "#{key}" unless value.blank?
