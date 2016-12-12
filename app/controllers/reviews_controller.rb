@@ -59,6 +59,7 @@ class ReviewsController < ApplicationController
       @review = Review.find(params[:id])
     end
     
+    #makes a beer for future use
     def set_beer
       @beer = Beer.find_by(id: params[:beer_id]) || Beer.find(review_params[:beer_id])
     end

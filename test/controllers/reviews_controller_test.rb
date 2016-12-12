@@ -19,7 +19,7 @@ class ReviewsControllerTest < ActionController::TestCase
       post :create, review: { beer_id: @beer, comment: @review.comment, rating: @review.rating }
     end
 
-    assert_redirected_to review_path(assigns(:review))
+    assert_redirected_to root_path(assigns(:review))
   end
 
   test "should get edit" do
