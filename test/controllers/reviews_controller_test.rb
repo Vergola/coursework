@@ -37,6 +37,6 @@ class ReviewsControllerTest < ActionController::TestCase
       delete :destroy, id: @review
     end
 
-    assert_redirected_to reviews_path
+    assert_redirected_to root_path
   end
 end

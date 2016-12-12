@@ -37,6 +37,27 @@ en:
         message: "Message:"
         enter_message: Your message
         submit: Contact Us
+    home:
+      welcome: Welcome to my beer review app!
+  
+  beers:
+    create:
+      create_success: Beer was successfully created.
+    update:
+      update_success: Beer was successfully updated.
+    destroy:
+      destroy_success: Beer was successfully destroyed.
+    show:
+      add: Add review
+      
+  reviews:
+    create:
+      create_success: Review was successfully created.
+    update:
+      update_success: Review was successfully updated.
+    destroy:
+      destroy_success: Review was successfully destroyed.
+      
   
   shared:
     header:
