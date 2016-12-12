@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :reviews
+  resources :reviews, except: [:index]
   resources :beers
   root 'home#home'
   get 'contact', to: 'home#contact'

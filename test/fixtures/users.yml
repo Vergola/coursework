@@ -5,9 +5,10 @@
 # below each fixture, per the syntax in the comments below
 #
 one: 
-    email: karolis@silingas.lt
-# column: value
-#
+    email: rokis@silingas.lt
+    encrypted_password: nothing
+
 two:
-    email: karolis2@silingas.lt
-#  column: value
+    email: petras@silingas.lt
+    encrypted_password: nothing
+

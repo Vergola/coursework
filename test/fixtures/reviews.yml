@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  beer_id: 1
+  beer: one
   rating: 1
   comment: MyText
-  user_id: 1
+  user: one
 
 two:
-  beer_id: 1
+  beer: one
   rating: 1
   comment: MyText
-  user_id: 1
+  user: two

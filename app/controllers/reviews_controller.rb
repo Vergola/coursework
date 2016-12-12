@@ -3,17 +3,6 @@ class ReviewsController < ApplicationController
   before_action :set_beer, only: [:new, :create]
   before_action :authenticate_user!
 
-  # GET /reviews
-  # GET /reviews.json
-  def index
-    @reviews = Review.all
-  end
-
-  # GET /reviews/1
-  # GET /reviews/1.json
-  def show
-  end
-
   # GET /reviews/new
   def new
     @review = @beer.reviews.new

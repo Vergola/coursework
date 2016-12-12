@@ -9,12 +9,6 @@ class ReviewsControllerTest < ActionController::TestCase
     sign_in @user
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:reviews)
-  end
-
   test "should get new" do
     get :new, beer_id: @beer
     assert_response :success
@@ -26,11 +20,6 @@ class ReviewsControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to review_path(assigns(:review))
-  end
-
-  test "should show review" do
-    get :show, id: @review
-    assert_response :success
   end
 
   test "should get edit" do
